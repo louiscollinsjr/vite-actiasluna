@@ -7,13 +7,13 @@ import './App.css'
 
 function App() {
   return (
-    <>
+    <div className=''>
       <Routes>
         <Route path="/" element={<NavigationComponent />}>
           <Route index element={<HomeComponent />} />
         </Route>
       </Routes>
-    </>
+    </div>
   )
 }
 
