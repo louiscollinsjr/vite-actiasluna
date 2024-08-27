@@ -1,5 +1,3 @@
-import { Button } from "@relume_io/relume-ui";
-import type { ButtonProps } from "@relume_io/relume-ui";
 
 type ImageProps = {
   src: string;
@@ -9,16 +7,34 @@ type ImageProps = {
 type Props = {
   heading: string;
   description: string;
-  buttons: ButtonProps[];
   firstImage: ImageProps;
   secondImage: ImageProps;
   thirdImage: ImageProps;
 };
 
+const Header127Defaults: Header127Props = {
+    heading: "Expertise Without Borders. Solutions Without Limits.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
+
+    firstImage: {
+      src: "https://relume-assets.s3.amazonaws.com/placeholder-image-landscape-dim.png",
+      alt: "Placeholder image 1",
+    },
+    secondImage: {
+      src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
+      alt: "Placeholder image 2",
+    },
+    thirdImage: {
+      src: "https://relume-assets.s3.amazonaws.com/placeholder-image-portrait-dim.png",
+      alt: "Placeholder image 3",
+    },
+  };
+
 export type Header127Props = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
 export const Header127 = (props: Header127Props) => {
-  const { heading, description, buttons, firstImage, secondImage, thirdImage } = {
+  const { heading, description, firstImage, secondImage, thirdImage } = {
     ...Header127Defaults,
     ...props,
   } as Props;
@@ -27,15 +43,15 @@ export const Header127 = (props: Header127Props) => {
       <div className="container">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
           <div>
-            <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl">{heading}</h1>
+            <h1 className="~text-lg/8xl mb-5 font-bold md:mb-6">{heading}</h1>
             <p className="md:text-md">{description}</p>
-            <div className="mt-6 flex gap-x-4 md:mt-8">
+            {/* <div className="mt-6 flex gap-x-4 md:mt-8">
               {buttons.map((button, index) => (
                 <Button key={index} {...button}>
                   {button.title}
                 </Button>
               ))}
-            </div>
+            </div> */}
           </div>
           <div className="relative flex w-full">
             <div className="absolute bottom-[10%] left-0 right-auto top-auto w-[45%]">
@@ -66,21 +82,4 @@ export const Header127 = (props: Header127Props) => {
   );
 };
 
-export const Header127Defaults: Header127Props = {
-  heading: "Medium length hero heading goes here",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
-  buttons: [{ title: "Button" }, { title: "Button", variant: "secondary" }],
-  firstImage: {
-    src: "https://relume-assets.s3.amazonaws.com/placeholder-image-landscape-dim.png",
-    alt: "Placeholder image 1",
-  },
-  secondImage: {
-    src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
-    alt: "Placeholder image 2",
-  },
-  thirdImage: {
-    src: "https://relume-assets.s3.amazonaws.com/placeholder-image-portrait-dim.png",
-    alt: "Placeholder image 3",
-  },
-};
+

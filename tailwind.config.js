@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 import fluid, { extract, screens, fontSize } from 'fluid-tailwind';
+
 export default {
   content:{
-    files:["./src/**/*.{js,jsx,ts,tsx}", 
-    './index.html',],
-  extract},
+    files:["./src/**/*.{js,jsx,ts,tsx}", './index.html'],
+  extract },
   theme: {
     extend: { 
       aspectRatio: {
@@ -23,6 +23,6 @@ export default {
       '170': '42.5rem',
     },},
   }, screens, fontSize,
-  plugins: [fluid, ],
+  plugins: [fluid],
 }
 
