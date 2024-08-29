@@ -1,12 +1,22 @@
+import { NavLink } from 'react-router-dom';
 import ActiasLunaGroup from '../assets/actiasluna_group.svg';
 
 import './hero.component.styles.css';
+
+
+// Scroll to section function
+const scrollToSection = (id: string) => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 
 export type Header127Props = React.ComponentPropsWithoutRef<"section">;
 
 export const Header127 = () => {
  
-
   return (
     <section className="w-full flex flex-col md:justify-center items-center py-48 md:py-24 lg:py-28 bg-slate-100 px-5 gradient_background lg:h-[1000px]">
     {/* px-[5%] py-16 md:py-24 lg:py-28 */}
@@ -25,9 +35,13 @@ export const Header127 = () => {
             We bring unparalleled global expertise and innovative strategies to help your business thrive in any market, anywhere in the world.
           </p>
           <div className="mt-6 flex gap-x-4 md:mt-8">
+           
+            <NavLink to="#" onClick={()=>scrollToSection('contact-section')} className="text-xs nav-link">
             <button className='text-blue-600 font-normal text-center w-full md:text-left'>
-              How can we help you? Get in touch with us.
+              How can we help you? Get in touch.
             </button>
+            </NavLink>
+            
           </div>
         </div>
   
