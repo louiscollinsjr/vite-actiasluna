@@ -69,14 +69,14 @@ const NavigationComponent: React.FC = () => {
             className={`fixed inset-0  md:hidden bg-black h-screen bg-opacity-100 z-40 overflow-hidden transition-max-height duration-300 ease-in-out`}
           >
             <div className="max-w-screen-xl mx-auto px-4 py-3 flex justify-between items-center">
-              <div className="flex items-center">
+              <div className="flex items-center text-white">
                 <Link to="/">
-                  <img
+                  {/* <img
                     className="w-20 bg-white invert md:invert-0"
                     src={navLogo}
                     alt="Logo"
                     onClick={() => setIsMobileNavOpen(false)}
-                  />
+                  /> */} <b>actias</b>luna
                 </Link>
               </div>
 
@@ -104,32 +104,12 @@ const NavigationComponent: React.FC = () => {
             <div className="px-4 pb-4 pt-6 space-y-2">
               <Link
                 className="block text-white hover:text-gray-300 text-3xl py-2"
-                to="/maestro"
+                to="#insights-section"
                 onClick={() => setIsMobileNavOpen(false)}
               >
-                Maestro
+                Global insights
               </Link>
-              <Link
-                className="block text-white hover:text-gray-300 text-3xl py-2"
-                to="#"
-                onClick={() => setIsMobileNavOpen(false)}
-              >
-                Design and Development
-              </Link>
-              <Link
-                className="block text-white hover:text-gray-300 text-3xl py-2"
-                to="#"
-                onClick={() => setIsMobileNavOpen(false)}
-              >
-                Satchel AR
-              </Link>
-              <Link
-                className="block text-white hover:text-gray-300 text-3xl py-2"
-                to="#"
-                onClick={() => setIsMobileNavOpen(false)}
-              >
-                atem.Labs
-              </Link>
+              
               <Link
                 className="block text-white hover:text-gray-300 text-3xl py-2"
                 to="#contact-section"

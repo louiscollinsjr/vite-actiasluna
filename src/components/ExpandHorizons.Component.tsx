@@ -12,7 +12,7 @@ const ExpandHorizonsComponent: React.FC = () => {
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 gap-4">
         <div className="items-center content-start justify-items-center pt-2 lg:pr-20">
-          <h2 className="~text-4xl/7xl font-heading">Expand your horizons and achieve new heights</h2>
+          <h2 className="~text-5xl/7xl font-heading">Expand your horizons and achieve new heights</h2>
 
          <ul className="list-disc leading-10 ~text-base/xl py-6 lg:pr-20 ">
           <p>Our team brings unparalleled global expertise and innovative strategies to help your business thrive across Europe and beyond. <br/><br/>Whether navigating complex regulations, seeking new opportunities, or optimizing operations, we deliver tailored solutions that transcend borders and drive your success.</p>
