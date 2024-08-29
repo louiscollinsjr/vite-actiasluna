@@ -10,6 +10,9 @@ extract},
     
     fontFamily: {
       'non.geist': ['"Geist Variable"', 'system-ui'],
+      'playfair':['"Playfair Display"', 'serif'],
+      'merriweather':['"Merriweather"', 'serif'],
+      'heading':['"Libre Caslon Display"', 'serif;'],
     },
     extend: {
       aspectRatio: {

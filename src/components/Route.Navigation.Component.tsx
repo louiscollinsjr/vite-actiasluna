@@ -5,6 +5,14 @@ import { Link, NavLink, Outlet } from 'react-router-dom';
 import FooterComponent from './Route.Footer.Component';
 import './route.navigation.component.styles.css';
 
+// Scroll to section function
+const scrollToSection = (id: string) => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 const NavigationComponent: React.FC = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
@@ -27,11 +35,11 @@ const NavigationComponent: React.FC = () => {
           </div>
 
           <div className="hidden md:flex space-x-4">
-            <NavLink className="text-xs nav-link" to="/">
+            <NavLink to="#" onClick={()=>scrollToSection('insights-section')} className="text-xs nav-link">
               Insights
             </NavLink>
-            <NavLink className="text-xs nav-link" to="/">
-              About us
+            <NavLink to="#" onClick={()=>scrollToSection('contact-section')} className="text-xs nav-link">
+            Contact us
             </NavLink>
           </div>
 

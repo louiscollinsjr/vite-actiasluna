@@ -1,0 +1,26 @@
+/* styles.css or in a CSS module */
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 35px;  /* Adjust width */
+  height: 35px; /* Adjust height */
+  background-color: rgb(194, 194, 194); /* Semi-transparent background color */
+  border-radius: 50%; /* Make them circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #474747; /* Color of the arrow */
+  font-size: 10px; /* Adjust font size of the arrow icon */
+  border: 0px solid #fff; /* Optional: add border to circle */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px; /* Font size for arrow icons */
+  font-weight:bolder;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgb(211, 211, 211); /* Darker on hover */
+}

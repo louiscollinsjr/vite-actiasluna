@@ -1,67 +1,51 @@
 import ActiasLuna from '../assets/actiasluna.svg';
+import ActiasLunaGroup from '../assets/actiasluna_group.svg';
 import YellowWingRight from '../assets/yw_right.svg';
 import YellowWingLeft from '../assets/ yw_left.svg';
-import BusinessDuo from '../assets/davidbustos_two_man_modern_lawyers_latin_american_35_years_old__2cdcc05b-bae8-48e5-9043-22139366133b.png';
 
-type Props = {
-  heading: string;
-  description: string;
-};
+import './hero.component.styles.css';
 
-const Header127Defaults: Header127Props = {
-    heading: "Expertise Without Borders. Solutions Without Limits.",
-    description:
-      "We bring unparalleled global expertise and innovative strategies to help your business thrive in any market, anywhere in the world.",
-  };
+export type Header127Props = React.ComponentPropsWithoutRef<"section">;
 
-export type Header127Props = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
+export const Header127 = () => {
+ 
 
-export const Header127 = (props: Header127Props) => {
-  const { heading, description} = {
-    ...Header127Defaults,
-    ...props,
-  } as Props;
   return (
-    <section className="w-full realative flex flex-col justify-center items-center py-16 md:py-24 lg:py-28"> 
+    <section className="w-full flex flex-col justify-center items-center py-16 md:py-24 lg:py-28 bg-slate-100 px-5 gradient_background "> 
     {/* px-[5%] py-16 md:py-24 lg:py-28 */}
 
-      <div className="flex flex-row z-30 w-full md:max-w-screen-2xl px-10">
+      <div className="flex flex-row z-30 w-full md:max-w-screen-2xl">
 
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
           <div className='pt-12'>
-            <p className="text-left"><b>actias</b>luna</p>
-            <h1 className="text-6xl mb-5 font-bold md:mb-6 text-left">{heading}</h1>
-            <p className="md:text-md text-left ~text-3xl/8xl">{description}</p>
-            {/* <div className="mt-6 flex gap-x-4 md:mt-8">
-              {buttons.map((button, index) => (
-                <Button key={index} {...button}>
-                  {button.title}
-                </Button>
-              ))}
-            </div> */}
+            <p className="text-center md:text-left"><b>actias</b>luna</p>
+            <h1 className="~text-4xl/7xl mb-5 md:mb-6 md:text-left font-heading text-center">Expertise Without Borders. Solutions Without Limits.</h1>
+            <p className="md:text-md md:text-left ~text-base/xl leading-normal lg:pr-20 text-center w-full">We bring unparalleled global expertise and innovative strategies to help your business thrive in any market, anywhere in the world.</p>
+            <div className="mt-6 flex gap-x-4 md:mt-8">
+             <button className=' text-blue-600 font-normal text-center w-full md:text-left'>How can help you? Get in touch with us.</button> 
+            </div> 
           </div>
 
           <div className="relative flex w-full">
-            <div className="absolute bottom-[10%] left-0 right-auto top-auto w-[25%] -rotate-90">
+            {/* <div className="absolute bottom-[10%] left-0 right-auto top-auto w-[25%] -rotate-90 opacity-45">
               <img
                 src={YellowWingLeft}
                 className="aspect-[3/2] size-full object-fill"
               />
-            </div>
-            <div className="mx-[15%] w-full">
+            </div> */}
+            <div className="mx-[10%] w-full">
               <img
-                 src={ActiasLuna}
+                 src={ActiasLunaGroup}
                 className="aspect-[2/3] size-full object-fill"
                 
               />
             </div>
-            <div className="absolute bottom-auto left-auto right-0 top-[10%] w-[20%] -rotate-90">
+            {/* <div className="absolute bottom-auto left-auto right-0 top-[10%] w-[20%] -rotate-90">
               <img
                 src={YellowWingRight}
-                className="aspect-square size-full object-cover"
-              
+                className="aspect-square size-full object-cover opacity-60"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
