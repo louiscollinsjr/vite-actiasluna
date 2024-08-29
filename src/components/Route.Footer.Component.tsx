@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import { Fragment } from 'react';
 import {
   BiLogoFacebookCircle,
@@ -19,11 +18,11 @@ const socialMediaLinks = [
   { url: '#', icon: <BiLogoYoutube className="text-xl" /> },
 ];
 
-const legalCopyLinks = [
-    // { title: "Privacy Policy", url: "#" },
-    // { title: "Terms of Service", url: "#" },
-    // { title: "Cookies Settings", url: "#" },
-];
+// const legalCopyLinks = [
+//     // { title: "Privacy Policy", url: "#" },
+//     // { title: "Terms of Service", url: "#" },
+//     // { title: "Cookies Settings", url: "#" },
+// ];
 
 const FooterComponent: React.FC = () => {
   return (

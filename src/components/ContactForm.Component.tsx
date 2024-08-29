@@ -35,8 +35,6 @@ const ContactFormComponent: React.FC = () => {
           }, 5000); // hide message after 5 seconds
         }
       );
-       // Clears the form after sending the email
-    e.target.reset();
     }
   };
 

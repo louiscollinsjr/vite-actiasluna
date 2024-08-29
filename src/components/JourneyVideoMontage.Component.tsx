@@ -1,9 +1,9 @@
 import React from 'react';
-import { useEffect, useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 
 const JourneyVideoMontageComponent: React.FC = () => {
-  const videoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null); // Initialize with null
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePausePlay = () => {
     if (videoRef.current) {

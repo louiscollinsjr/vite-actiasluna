@@ -1,7 +1,4 @@
-import ActiasLuna from '../assets/actiasluna.svg';
 import ActiasLunaGroup from '../assets/actiasluna_group.svg';
-import YellowWingRight from '../assets/yw_right.svg';
-import YellowWingLeft from '../assets/ yw_left.svg';
 
 import './hero.component.styles.css';
 

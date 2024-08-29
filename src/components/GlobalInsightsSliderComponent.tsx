@@ -18,7 +18,7 @@ import { GET_BLOG_POST_ITEMS } from '../queries';
 
 
 // Fallback image URL (use a local or remote default image URL)
-const FALLBACK_IMAGE_URL = '../assets/react.svg';
+// const FALLBACK_IMAGE_URL = '../assets/react.svg';
 
 // Define the Post type based on the structure of the posts
 interface Post {
@@ -30,12 +30,11 @@ interface Post {
     text: string;
   };
   slug: string;
-  
   image: {
     filename:string;
     url: string;
   };
-   publishingDate: String;
+   publishingDate: string;
 }
 
 

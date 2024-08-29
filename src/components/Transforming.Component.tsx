@@ -2,11 +2,10 @@ import React, { useState, useEffect }  from 'react';
 import Team from '../assets/louiscollinsjr_a_proud_team_of_Romanian_office_workers_standi_65b5b0e0-dd6a-4670-977b-cbc663acd9ba_3.png'
 
 const TransformingComponent: React.FC = () => {
-
-    const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     // Function to toggle accordion
-  const toggleAccordion = (index) => {
+  const toggleAccordion = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
