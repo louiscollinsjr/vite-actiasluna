@@ -1,5 +1,3 @@
-
-
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 
@@ -8,16 +6,20 @@ const ContactFormComponent: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [stateMessage, setStateMessage] = useState<string | null>(null);
 
+  const emailjsServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID as string;
+  const emailjsTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string;
+  const emailjsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string;
+
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     if (form.current) {
       emailjs.sendForm(
-        'service_atghzfo',  // Replace with your EmailJS service ID
-        'template_zqqfcc4', // Replace with your EmailJS template ID
-        form.current,       // Reference to the form element
-        'CZY_ULq328zuRud_A'   // Replace with your EmailJS public key
+        emailjsServiceId,       // EmailJS service ID as a string
+        emailjsTemplateId,     // EmailJS template ID as a string
+        form.current,           // Reference to the form element
+        emailjsPublicKey       // EmailJS public key as a string
       ).then(
         () => {
           setStateMessage('Message sent!');
@@ -25,14 +27,14 @@ const ContactFormComponent: React.FC = () => {
           form.current?.reset(); // Clear the form after success
           setTimeout(() => {
             setStateMessage(null);
-          }, 5000); // hide message after 5 seconds
+          }, 5000); // Hide message after 5 seconds
         },
         () => {
           setStateMessage('Something went wrong, please try again later');
           setIsSubmitting(false);
           setTimeout(() => {
             setStateMessage(null);
-          }, 5000); // hide message after 5 seconds
+          }, 5000); // Hide message after 5 seconds
         }
       );
     }
