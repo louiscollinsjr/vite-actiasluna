@@ -59,7 +59,7 @@ const BlogSliderComponent: React.FC = () => {
     <section id="insights-section" className="w-full flex flex-col content-center items-center min-h-[42.5rem] py-12 lg:py-24 my-2 px-10" tabIndex={-1}>
     <div className="w-full md:max-w-screen-2xl">
     <p className="~text-base/lg tracking-wide text-black">
-    <b>actias</b>luna
+    <b>Actias</b>Luna
     </p>
       <p className="~text-4xl/7xl  text-black pb-8  pt-2 lg:w-245 font-heading">
       Global Insights.

@@ -29,7 +29,7 @@ const NavigationComponent: React.FC = () => {
             <NavLink to="/" end>
               {/* <img className="w-20 invert md:invert-0"  src={navLogo} alt="Logo" onClick={() => setIsMobileNavOpen(false)} /> */}
               <p>
-                <b>actias</b>luna
+                <b>Actias</b>Luna
               </p>
             </NavLink>
           </div>

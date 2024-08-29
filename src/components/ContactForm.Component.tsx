@@ -46,7 +46,7 @@ const ContactFormComponent: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 gap-6 content-center w-full">
           <div className="rounded-xl">
             <p className="~text-base/lg tracking-wide text-black pb-2">
-              <b>actias</b> luna
+              <b>Actias</b>Luna
             </p>
             <p className="~text-4xl/7xl text-black pb-8 lg:w-245 font-heading">
               Looking forward.

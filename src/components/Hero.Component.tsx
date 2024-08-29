@@ -27,7 +27,7 @@ export const Header127 = () => {
         {/* Order on medium screens and above: Image first, Text second */}
         
         <div className="pt-24 md:pt-12 order-2 md:order-1 "> {/* This will be second on mobile, first on desktop */}
-          <p className="text-center md:text-left"><b>actias</b>luna</p>
+          <p className="text-center md:text-left"><b>Actias</b>Luna</p>
           <h1 className="~text-5xl/7xl mb-5 md:mb-6 md:text-left font-heading text-center font-semi md:font-normal">
             Expertise Without Borders. Solutions Without Limits.
           </h1>
@@ -47,10 +47,10 @@ export const Header127 = () => {
   
         <div className="relative flex w-full order-1 md:order-2 "> {/* This will be first on mobile, second on desktop */}
           <div className="mx-[10%] md:w-full">
-            <img
+            {/* <img
               src={ActiasLunaGroup}
               className="size-full object-fill"
-            />
+            /> */}
           </div>
         </div>
       </div>

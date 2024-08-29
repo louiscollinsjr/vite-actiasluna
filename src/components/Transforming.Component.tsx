@@ -43,7 +43,7 @@ const TransformingComponent: React.FC = () => {
     <section className="w-full flex flex-col content-center items-center min-h-[42.5rem] py-48 lg:pb-48 px-10 bg-white">
     <div className="w-full md:max-w-screen-2xl">
     <p className="~text-base/lg tracking-wide text-black">
-    <b>actias</b>luna
+    <b>Actias</b>Luna
     </p>
       <h1 className="text-black pb-4 ~text-4xl/7xl lg:w-245 font-heading lg:pr-32">
       Transforming Challenges into Opportunities.
