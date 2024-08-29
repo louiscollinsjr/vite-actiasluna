@@ -30,9 +30,9 @@ const JourneyVideoMontageComponent: React.FC = () => {
         Your browser does not support the video tag.
       </video>
 
-      <div className="absolute bottom-2 m-2">
+      <div className="absolute bottom-2 m-3">
             <button
-              className="bg-black bg-opacity-50 text-white px-2 py-2 rounded-full shadow "
+              className="bg-white bg-opacity-50 text-black px-2 py-2 rounded-full shadow"
               onClick={handlePausePlay}
             >
               {isPlaying ? (
