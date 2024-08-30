@@ -18,7 +18,7 @@ import { GET_BLOG_POST_ITEMS } from '../queries';
 
 
 // Fallback image URL (use a local or remote default image URL)
-// const FALLBACK_IMAGE_URL = '../assets/react.svg';
+const FALLBACK_IMAGE_URL = '../assets/react.svg';
 
 // Define the Post type based on the structure of the posts
 interface Post {
@@ -56,7 +56,7 @@ const BlogSliderComponent: React.FC = () => {
   // }));
 
   return (
-    <section id="insights-section" className="w-full flex flex-col content-center items-center min-h-[42.5rem] py-12 lg:py-24 my-2 px-10" tabIndex={-1}>
+    <section id="insights-section" className="w-full flex flex-col content-center items-center min-h-[42.5rem] py-12 lg:py-24 my-2 px-10 bg-slate-200" tabIndex={-1}>
     <div className="w-full md:max-w-screen-2xl">
     <p className="~text-base/lg tracking-wide text-black">
     <b>Actias</b>Luna
@@ -66,7 +66,7 @@ const BlogSliderComponent: React.FC = () => {
       </p>
       
 
-      <div className=''>
+      <div className=' lg:w-full'>
       <Swiper className=''
       modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
       spaceBetween={20}
@@ -78,36 +78,61 @@ const BlogSliderComponent: React.FC = () => {
       }}
       breakpoints={{
         // Responsive breakpoints
+        480: {
+          slidesPerView: 1, // 1 slide per view on extra-small screens (up to 480px)
+        },
         640: {
-          slidesPerView: 1, // 1 slide per view on mobile screens (up to 640px)
+          slidesPerView: 2, // 2 slides per view on small screens (up to 640px)
+        },
+        768: {
+          slidesPerView: 2, // 2 slides per view on medium screens (up to 768px)
         },
         1024: {
-          slidesPerView: 3, // 3 slides per view on large screens (1024px and above)
+          slidesPerView: 2, // 3 slides per view on large screens (1024px and above)
+        },
+        1280: {
+          slidesPerView: 3, // 4 slides per view on extra-large screens (1280px and above)
+        },
+        1536: {
+          slidesPerView: 3, // 5 slides per view on 2K screens (1536px and above)
+        },
+        1920: {
+          slidesPerView: 3, // 6 slides per view on ultra-wide screens (1920px and above)
         },
       }}
     >
       {data.posts.map((post: Post, index: number) => (
         <SwiperSlide key={index}>
           <div
-            className="blog-slide rounded-xl shadow-xl mx-4 my-8 bg-black"
+            className="rounded-xl shadow-xl mx-2 my-8 h-[500px]  bg-white"
             style={{
-              //backgroundImage: `url(${post.image?.url || FALLBACK_IMAGE_URL})`,
+              // backgroundImage: `url(${post.image?.url || FALLBACK_IMAGE_URL})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              height: '400px',
-              color: '#fff',
+              height:500,
+              color: '#000',
               display: 'flex',
               alignItems: 'start',
               justifyContent: '',
               flexDirection: 'column',
               textAlign: 'left',
-              padding: '30px',
+              padding: '15px',
             }}
           >
-            <p className='text-xs uppercase py-2'>{post.category}</p>
-            <h2 className='text-2xl font-bold'>{post.title}</h2>
-            <p className='py-4'>{post.content.text}</p>
-           <button className='bg-white opacity-50 text-black py-1 px-2 rounded-2xl text-[8px] uppercase tracking-wide'> Comming {post.publishingDate }</button>
+           
+            <img
+              alt="Business meeting"
+              className="w-full object-cover transition-transform duration-300 ease-in-out hover:scale-102 rounded-2xl h-[45%] border-0"
+              src={post.image?.url || FALLBACK_IMAGE_URL}
+              style={{
+                objectFit: "cover",
+              }}
+           
+            />
+            <p className='text-xs uppercase py-4 pl-2'>{post.category}</p>
+            <h2 className='text-base/2xl font-bold pl-2'>{post.title}</h2>
+            <p className='py-4 ~text-xs/sm pl-2'>{post.content.text}</p>
+            <button className='absolute bottom-12 bg-slate-200 opacity-50 text-black py-1 px-2 rounded-2xl text-[8px] uppercase tracking-wide'> Comming {post.publishingDate }</button>
           </div>
         </SwiperSlide>
       ))}
