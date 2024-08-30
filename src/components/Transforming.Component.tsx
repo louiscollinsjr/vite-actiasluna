@@ -48,7 +48,7 @@ const TransformingComponent: React.FC = () => {
       <h1 className="text-black pb-4 ~text-4xl/7xl lg:w-245 font-heading lg:pr-32">
       Transforming Challenges into Opportunities.
       </h1>
-      <p className="md:text-md text-left ~text-base/xl leading-normal lg:w-245 lg:pr-20 pb-24">We bring unparalleled global expertise and innovative strategies to help your business thrive in any market, anywhere in the world.</p>
+      <p className="md:text-md text-left ~text-base/xl leading-normal lg:w-245 lg:pr-20 pb-24 pt-8">We bring unparalleled global expertise and innovative strategies to help your business thrive in any market, anywhere in the world.</p>
             
       
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 gap-6 bg-gray-100 p-10 md:p-20 rounded-2xl">
