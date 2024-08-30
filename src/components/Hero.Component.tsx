@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import ActiasLunaGroup from '../assets/actiasluna_group.svg';
+import ActiasLunaGroup from '../assets/ActiasLuna_Wings_Yellow.svg';
 
 import './hero.component.styles.css';
 
@@ -26,9 +26,9 @@ export const Header127 = () => {
         {/* Order on small screens: Text first, Image second */}
         {/* Order on medium screens and above: Image first, Text second */}
         
-        <div className="pt-24 md:pt-12 order-2 md:order-1 "> {/* This will be second on mobile, first on desktop */}
-          <p className="text-center md:text-left"><b>Actias</b>Luna</p>
-          <h1 className="~text-5xl/7xl mb-5 md:mb-6 md:text-left font-heading text-center font-semi md:font-normal">
+        <div className="pt-2 md:pt-12 order-2 md:order-1 "> {/* This will be second on mobile, first on desktop */}
+          <p className="text-center invisible md:text-left md:visible"><b>Actias</b>Luna</p>
+          <h1 className="~text-5xl/7xl mb-5 md:mb-6 md:text-left font-heading text-center font-normal">
             Expertise Without Borders. Solutions Without Limits.
           </h1>
           <p className="md:text-md md:text-left ~text-lg/xl leading-normal lg:pr-20 text-center w-full">
@@ -36,8 +36,8 @@ export const Header127 = () => {
           </p>
           <div className="mt-6 flex gap-x-4 md:mt-8">
            
-            <NavLink to="#" onClick={()=>scrollToSection('contact-section')} className="text-xs nav-link">
-            <button className='text-blue-600 font-normal text-center w-full md:text-left'>
+            <NavLink to="#" onClick={()=>scrollToSection('contact-section')} className="text-base nav-link text-center w-full">
+            <button className='text-blue-600 font-normal text-center md:text-left w-full'>
               How can we help you? Get in touch.
             </button>
             </NavLink>
@@ -47,10 +47,10 @@ export const Header127 = () => {
   
         <div className="relative flex w-full order-1 md:order-2 "> {/* This will be first on mobile, second on desktop */}
           <div className="mx-[10%] md:w-full">
-            {/* <img
+            <img
               src={ActiasLunaGroup}
-              className="size-full object-fill"
-            /> */}
+              className="size-full object-fill pb-24"
+            />
           </div>
         </div>
       </div>

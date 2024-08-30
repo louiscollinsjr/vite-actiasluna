@@ -41,7 +41,7 @@ const ContactFormComponent: React.FC = () => {
   };
 
   return (
-    <section id="contact-section" className="w-full flex flex-col content-center items-center min-h-[42.5rem] py-2 lg:py-24 my-2 px-10" tabIndex={-1}>
+    <section id="contact-section" className="w-full flex flex-col content-center items-center min-h-[42.5rem] py-2 lg:py-24 my-2 px-10 bg-[#f7f5fb]" tabIndex={-1}>
       <div className="w-full md:max-w-screen-2xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 gap-6 content-center w-full">
           <div className="rounded-xl">
@@ -64,7 +64,7 @@ const ContactFormComponent: React.FC = () => {
               <input className="h-10 pl-4" name="phone-number" placeholder="Phone Number (Optional)" type="text" />
               <div className="mt-6 mb-6">
                 <input type="checkbox" name="more-info" />
-                <label className="text-sm">Get updates about upcoming events, webinars, product announcements, and helpful resources.</label>
+                <label className="text-sm pl-2">  Get updates about upcoming events, webinars, product announcements, and helpful resources.</label>
               </div>
               <button className="bg-black hover:bg-slate-600 text-white rounded-full px-4 py-2 text-sm" type="submit" disabled={isSubmitting}>
                 {isSubmitting ? 'Submitting...' : 'Send'}

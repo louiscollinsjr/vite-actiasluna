@@ -1,22 +1,22 @@
 import React from 'react';
 import { Fragment } from 'react';
-import {
-  BiLogoFacebookCircle,
-  BiLogoInstagram,
-  BiLogoLinkedinSquare,
-  BiLogoYoutube,
-} from 'react-icons/bi';
+// import {
+//   BiLogoFacebookCircle,
+//   BiLogoInstagram,
+//   BiLogoLinkedinSquare,
+//   BiLogoYoutube,
+// } from 'react-icons/bi';
 
-import { FaTwitter } from 'react-icons/fa';
-import actiasLogo from '../assets/actiasluna_group.svg';
+// import { FaTwitter } from 'react-icons/fa';
+import actiasLogo from '../assets/ActiasLuna_Wings.svg';
 
-const socialMediaLinks = [
-  { url: '#', icon: <BiLogoFacebookCircle className="text-xl" /> },
-  { url: '#', icon: <BiLogoInstagram className="text-xl" /> },
-  { url: '#', icon: <FaTwitter className="text-xl" /> },
-  { url: '#', icon: <BiLogoLinkedinSquare className="text-xl" /> },
-  { url: '#', icon: <BiLogoYoutube className="text-xl" /> },
-];
+// const socialMediaLinks = [
+//   { url: '#', icon: <BiLogoFacebookCircle className="text-xl" /> },
+//   { url: '#', icon: <BiLogoInstagram className="text-xl" /> },
+//   { url: '#', icon: <FaTwitter className="text-xl" /> },
+//   { url: '#', icon: <BiLogoLinkedinSquare className="text-xl" /> },
+//   { url: '#', icon: <BiLogoYoutube className="text-xl" /> },
+// ];
 
 // const legalCopyLinks = [
 //     // { title: "Privacy Policy", url: "#" },
@@ -46,7 +46,7 @@ const FooterComponent: React.FC = () => {
               </div>  */}
             </div>
             <div>
-            <p className="text-xs font-normal py-3">Follow us</p>
+            {/* <p className="text-xs font-normal py-3">Follow us</p>
               <div className="flex space-x-4">
                 {socialMediaLinks.map((link, index) => (
                   <a
@@ -57,7 +57,7 @@ const FooterComponent: React.FC = () => {
                     {link.icon}
                   </a>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
           <div className='flex space-x-4 py-8 align-baseline align-bottom text-xs'>
