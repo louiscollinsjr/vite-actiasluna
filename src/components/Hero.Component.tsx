@@ -18,7 +18,7 @@ export type Header127Props = React.ComponentPropsWithoutRef<"section">;
 export const Header127 = () => {
  
   return (
-    <section className="w-full flex flex-col md:justify-center items-center py-48 md:py-24 lg:py-28 bg-slate-100 px-5 gradient_background lg:h-[1000px]">
+    <section className="w-full flex flex-col md:justify-center items-center py-48 md:py-24 lg:py-28 px-5 gradient_background lg:h-[1000px]">
     {/* px-[5%] py-16 md:py-24 lg:py-28 */}
   
     <div className="flex flex-row z-30 w-full md:max-w-screen-2xl">

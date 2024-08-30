@@ -56,7 +56,7 @@ const BlogSliderComponent: React.FC = () => {
   // }));
 
   return (
-    <section id="insights-section" className="w-full flex flex-col content-center items-center min-h-[42.5rem] py-12 lg:py-24 my-2 px-10 bg-slate-200" tabIndex={-1}>
+    <section id="insights-section" className="w-full flex flex-col content-center items-center min-h-[42.5rem] py-12 lg:py-24 my-2 px-10" tabIndex={-1}>
     <div className="w-full md:max-w-screen-2xl">
     <p className="~text-base/lg tracking-wide text-black">
     <b>Actias</b>Luna
@@ -104,7 +104,7 @@ const BlogSliderComponent: React.FC = () => {
       {data.posts.map((post: Post, index: number) => (
         <SwiperSlide key={index}>
           <div
-            className="rounded-xl shadow-xl mx-2 my-8 h-[500px]  bg-white"
+            className="rounded-lg shadow-xl mx-2 my-8 h-[500px]  bg-white"
             style={{
               // backgroundImage: `url(${post.image?.url || FALLBACK_IMAGE_URL})`,
               backgroundSize: 'cover',
@@ -122,7 +122,7 @@ const BlogSliderComponent: React.FC = () => {
            
             <img
               alt="Business meeting"
-              className="w-full object-cover transition-transform duration-300 ease-in-out hover:scale-102 rounded-2xl h-[45%] border-0"
+              className="w-full object-cover transition-transform duration-300 ease-in-out hover:scale-102 rounded-lg h-[45%] border-0"
               src={post.image?.url || FALLBACK_IMAGE_URL}
               style={{
                 objectFit: "cover",

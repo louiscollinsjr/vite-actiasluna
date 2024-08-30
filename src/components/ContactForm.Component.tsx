@@ -41,7 +41,7 @@ const ContactFormComponent: React.FC = () => {
   };
 
   return (
-    <section id="contact-section" className="w-full flex flex-col content-center items-center min-h-[42.5rem] py-2 lg:py-24 my-2 px-10 bg-[#f7f5fb]" tabIndex={-1}>
+    <section id="contact-section" className="w-full flex flex-col content-center items-center min-h-[42.5rem] py-2 lg:py-24 my-2 px-10" tabIndex={-1}>
       <div className="w-full md:max-w-screen-2xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 gap-6 content-center w-full">
           <div className="rounded-xl">
