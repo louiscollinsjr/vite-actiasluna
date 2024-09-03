@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fragment, useState } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 
 import FooterComponent from './Route.Footer.Component';
@@ -14,6 +14,23 @@ const scrollToSection = (id: string) => {
 };
 
 const NavigationComponent: React.FC = () => {
+// Handle scroll on initial load if there's a hash in the URL
+useEffect(() => {
+  // Get the hash from the URL
+  const hash = window.location.hash.substring(1);
+  if (hash) {
+    scrollToSection(hash);
+  }
+}, []);
+
+// Handle scroll on link click
+const handleNavLinkClick = (sectionId: string) => {
+  // Set hash in URL
+  window.location.hash = `#${sectionId}`;
+  // Scroll to the section
+  scrollToSection(sectionId);
+};
+
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   const toggleMobileNav = () => {
@@ -35,10 +52,10 @@ const NavigationComponent: React.FC = () => {
           </div>
 
           <div className="hidden md:flex space-x-4">
-            <NavLink to="#" onClick={()=>scrollToSection('insights-section')} className="text-xs nav-link">
+            <NavLink to="/#insights-section" onClick={()=>scrollToSection('insights-section')} className="text-xs nav-link">
               Insights
             </NavLink>
-            <NavLink to="#" onClick={()=>scrollToSection('contact-section')} className="text-xs nav-link">
+            <NavLink to="/#contact-section" onClick={()=>handleNavLinkClick('contact-section')} className="text-xs nav-link">
             Contact us
             </NavLink>
           </div>

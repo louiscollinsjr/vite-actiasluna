@@ -1,5 +1,5 @@
 import React, { useState, useEffect }  from 'react';
-import Team from '../assets/louiscollinsjr_a_proud_team_of_Romanian_office_workers_standi_65b5b0e0-dd6a-4670-977b-cbc663acd9ba_3.png'
+import Team from '../assets/a_proud_team_of_Romanian_office_workers.jpg';
 
 const TransformingComponent: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);

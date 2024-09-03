@@ -1,0 +1,50 @@
+/* src/components/CookieConsent.css */
+
+/* Full-page overlay */
+.cookie-consent-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5000;
+  }
+  
+  /* Popup content box */
+  .cookie-consent-popup {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    max-width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .cookie-consent-popup p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .cookie-consent-popup button {
+    padding: 10px 15px;
+    font-size: 14px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .cookie-consent-popup button:first-of-type {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .cookie-consent-popup button:last-of-type {
+    background-color: #ccc;
+    color: black;
+  }

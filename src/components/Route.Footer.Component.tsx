@@ -18,11 +18,11 @@ import actiasLogo from '../assets/ActiasLuna_Wings.svg';
 //   { url: '#', icon: <BiLogoYoutube className="text-xl" /> },
 // ];
 
-// const legalCopyLinks = [
-//     // { title: "Privacy Policy", url: "#" },
+ const legalCopyLinks = [
+{ title: "Privacy Policy", url: "/privacy-policy"},
 //     // { title: "Terms of Service", url: "#" },
 //     // { title: "Cookies Settings", url: "#" },
-// ];
+ ];
 
 const FooterComponent: React.FC = () => {
   return (
@@ -63,7 +63,7 @@ const FooterComponent: React.FC = () => {
           <div className='flex space-x-4 py-8 align-baseline align-bottom text-xs'>
             
                 <p className=''>© 2024 <b>Actias</b>Luna, SRL. All rights reserved.</p>
-                {/* {legalCopyLinks.map((link,index)=>(
+                {legalCopyLinks.map((link,index)=>(
                      <a
                      key={index}
                      href={link.url}
@@ -71,7 +71,7 @@ const FooterComponent: React.FC = () => {
                    >
                      {link.title}
                    </a>
-                ))} */}
+                ))}
               </div>
         </div>
       </section>
