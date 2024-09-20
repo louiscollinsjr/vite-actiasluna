@@ -8,7 +8,7 @@ import { Fragment } from 'react';
 // } from 'react-icons/bi';
 
 // import { FaTwitter } from 'react-icons/fa';
-import actiasLogo from '../assets/ActiasLuna_Wings.svg';
+import actiasLogo from '../assets/ActiasLuna_Wings_IC.svg';
 
 // const socialMediaLinks = [
 //   { url: '#', icon: <BiLogoFacebookCircle className="text-xl" /> },

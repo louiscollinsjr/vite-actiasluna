@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import ActiasLunaGroup from '../assets/ActiasLuna_Wings_Yellow.svg';
+import ActiasLunaGroup from '../assets/ActiasLuna_Wings_IC.svg';
 
 import './hero.component.styles.css';
 
