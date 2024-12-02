@@ -4,6 +4,7 @@ import NavigationComponent from './components/Route.Navigation.Component';
 import HomeComponent from './components/Route.Home.Component';
 import CookieConsent from './components/CookieConsent.Component';
 import PrivacyPolicy from './components/PrivacyPolicy.Component';
+import PartnersRoute from './components/Route.Partners.Component';
 
 import './App.css'
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<NavigationComponent />}>
           <Route index element={<HomeComponent />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/partners" element={<PartnersRoute />} />
         </Route>
       </Routes>
       <CookieConsent />

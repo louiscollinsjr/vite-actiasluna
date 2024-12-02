@@ -51,11 +51,12 @@ const handleNavLinkClick = (sectionId: string) => {
             </NavLink>
           </div>
 
-          <div className="hidden md:flex space-x-4">
-            <NavLink to="/#insights-section" onClick={()=>scrollToSection('insights-section')} className="text-xs nav-link">
+          <div className="hidden md:flex space-x-8 ml-8">
+            <NavLink to="/partners" className="text-gray-600 hover:text-gray-900 text-xs">Partners</NavLink>
+            <NavLink to="/#insights-section" onClick={()=>scrollToSection('insights-section')} className="text-gray-600 hover:text-gray-900 text-xs">
               Insights
             </NavLink>
-            <NavLink to="/#contact-section" onClick={()=>handleNavLinkClick('contact-section')} className="text-xs nav-link">
+            <NavLink to="/#contact-section" onClick={()=>handleNavLinkClick('contact-section')} className="text-gray-600 hover:text-gray-900 text-xs">
             Contact us
             </NavLink>
           </div>
@@ -119,21 +120,15 @@ const handleNavLinkClick = (sectionId: string) => {
             </div>
 
             <div className="px-4 pb-4 pt-6 space-y-2">
-              <Link
-                className="block text-white hover:text-gray-300 text-3xl py-2"
-                to="#insights-section"
-                onClick={() => setIsMobileNavOpen(false)}
-              >
-                Global insights
-              </Link>
-              
-              <Link
-                className="block text-white hover:text-gray-300 text-3xl py-2"
-                to="#contact-section"
-                onClick={() => setIsMobileNavOpen(false)}
-              >
-                Contact us
-              </Link>
+              <div className={`md:hidden fixed inset-0 bg-black bg-opacity-50 ${isMobileNavOpen ? '' : 'hidden'}`}>
+                <div className="bg-white h-full w-64 p-4">
+                  <div className="flex flex-col space-y-4">
+                    <NavLink to="/" className="text-gray-600 hover:text-gray-900" onClick={() => setIsMobileNavOpen(false)} end>Home</NavLink>
+                    <NavLink to="/partners" className="text-gray-600 hover:text-gray-900" onClick={() => setIsMobileNavOpen(false)}>Partners</NavLink>
+                    <NavLink to="/privacy-policy" className="text-gray-600 hover:text-gray-900" onClick={() => setIsMobileNavOpen(false)}>Privacy Policy</NavLink>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         )}
