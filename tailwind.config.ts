@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 import fluid, { extract, screens, fontSize } from 'fluid-tailwind';
 
-module.exports = {
+export default {
   content: {
-  files:['./src/**/*.{js,jsx,ts,tsx}', 
-  './index.html'],
-extract},
+    files:['./src/**/*.{js,jsx,ts,tsx}', 
+    './index.html'],
+    extract
+  },
   theme: {
     
     fontFamily: {
