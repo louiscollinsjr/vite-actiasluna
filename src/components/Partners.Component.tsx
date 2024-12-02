@@ -46,11 +46,6 @@ const PartnersComponent: React.FC = () => {
       description: "Quick Legal is a legal service provider that offers fast and efficient solutions for individuals and businesses. Their services include contract drafting, legal consultations, and dispute resolution."
     },
     {
-      name: "Pajtimi",
-      url: "https://pajtimi.com/",
-      description: "Pajtimi is a multifaceted company offering services in construction, renovation, and maintenance. They focus on delivering quality craftsmanship while ensuring customer satisfaction through tailored solutions."
-    },
-    {
       name: "Domi's Repairs and Home Works",
       url: "https://domisrepairsdecorating.co.uk/",
       description: "Domi's Repairs and Home Works is a company specializing in repairs and home works. They offer a wide range of services, including plumbing, electrical, painting, and more."
