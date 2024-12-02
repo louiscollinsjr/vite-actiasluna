@@ -5,13 +5,14 @@ import HomeComponent from './components/Route.Home.Component';
 import CookieConsent from './components/CookieConsent.Component';
 import PrivacyPolicy from './components/PrivacyPolicy.Component';
 import PartnersRoute from './components/Route.Partners.Component';
+import ScrollToTop from './components/util.scrollToTop';
 
 import './App.css'
 
 function App() {
   return (
     <div className='App'>
-      
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<NavigationComponent />}>
           <Route index element={<HomeComponent />} />
