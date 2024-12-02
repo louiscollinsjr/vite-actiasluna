@@ -21,11 +21,6 @@ const PartnersComponent: React.FC = () => {
       description: "Global Worker is a recruitment agency that connects job seekers with employment opportunities across the European Union. They offer personalized career development support, access to a wide range of job listings, and assistance with necessary documentation."
     },
     {
-      name: "Domi's Repairs & Decorating",
-      url: "https://domisrepairsdecorating.co.uk/",
-      description: "Domi's Repairs & Decorating specializes in high-quality painting and decorating services for both residential and commercial properties. With over five years of experience, they provide interior and exterior painting, wallpaper hanging, and handyman services."
-    },
-    {
       name: "Cobra UK Security",
       url: "http://www.cobrauksecurity.co.uk",
       description: "Cobra UK Security offers comprehensive security solutions tailored to meet the needs of various clients. Their services include manned guarding, mobile patrols, event security, and bespoke security consultancy."
@@ -33,7 +28,7 @@ const PartnersComponent: React.FC = () => {
     {
       name: "Studio Hysen Belli",
       url: "https://studiohysenbelli.com/",
-      description: "Studio Hysen Belli is an architectural and design firm known for its innovative approach to both residential and commercial projects. They emphasize sustainable design practices while delivering aesthetically pleasing solutions."
+      description: "Studio Kontabiliteti Hysenbelli is a CKB-registered accounting studio offering financial, fiscal, and accounting consulting services to local and international businesses, helping clients navigate financial landscapes and ensure compliance."
     },
     {
       name: "KISIKA Group",
@@ -52,7 +47,7 @@ const PartnersComponent: React.FC = () => {
     },
     {
       name: "Aliida Staffing Recruiting",
-      url: "https://www.alida-staffing-recruiting.eu/en/about-us/",
+      url: "https://www.alida-staffing-recruiting.eu/en/home-alida-staffing-recruiting/",
       description: "Alida Staffing & Recruiting is a recruitment agency committed to connecting skilled professionals with top companies. Their services include human resources, talent management, and more."
     },
     {
@@ -62,7 +57,7 @@ const PartnersComponent: React.FC = () => {
     },
     {
       name: "BB Bau & Handel GmbH",
-      url: "https://cobrauksecurity.co.uk/",  
+      url: "https://bb-bau.net/",  
       description: "BB Bau & Handel GmbH specializes in delivering successful private and commercial construction projects. From planning to completion, we provide expert support every step of the way."
     },
     {
