@@ -1,5 +1,6 @@
 import React from 'react';
 import JourneyVideoMontageComponent from './JourneyVideoMontage.Component';
+import { Link } from 'react-router-dom';
 
 
 
@@ -28,9 +29,12 @@ const ExpandHorizonsComponent: React.FC = () => {
       <p className="~text-base/lg tracking-wide text-black pb-4 font-normal uppercase">
       Testimonials from Our Partners
       </p>
-      <p className="~text-base/xl tracking-wide text-black pb-12 font-normal md:w-[40%]">
-      At ActiasLuna, we deeply value our partnerships and are committed to delivering excellence, as evidenced by the positive experiences of those we work with.
+      <p className="~text-base/xl tracking-wide text-black pb-8 font-normal md:w-[40%]">
+      At <b>Actias</b>Luna, we deeply value our partnerships and are committed to delivering excellence, as evidenced by the positive experiences of those we work with.
       </p>
+      <Link to="/partners" className="text-blue-600 hover:text-blue-800 transition-colors pb-12 block">
+         Our partners →
+      </Link>
 
       <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-6 font-playfair justify-center items-center bg-gray-200 p-1 bg-opacity-0 rounded-2xl">
         <div className="bg-white p-6 rounded-lg shadow-lg h-40">

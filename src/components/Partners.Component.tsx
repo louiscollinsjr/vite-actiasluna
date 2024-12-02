@@ -101,7 +101,7 @@ const PartnersComponent: React.FC = () => {
           Together, we don't just consult—we co-create pathways to sustainable growth and operational excellence.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-12">
           {partners.map((partner, index) => (
             <div
               key={index}
@@ -113,9 +113,10 @@ const PartnersComponent: React.FC = () => {
                 rel="noopener noreferrer" 
                 className="block"
               >
-                <h3 className="text-xl font-heading mb-4 hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-heading mb-1  hover:text-blue-600 transition-colors">
                   {partner.name}
                 </h3>
+                <p className='text-blue-600 font-light text-xs mb-3'>{partner.url}</p>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   {partner.description}
                 </p>

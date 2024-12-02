@@ -45,7 +45,7 @@ const handleNavLinkClick = (sectionId: string) => {
           <div className="flex items-center">
             <NavLink to="/" end>
               {/* <img className="w-20 invert md:invert-0"  src={navLogo} alt="Logo" onClick={() => setIsMobileNavOpen(false)} /> */}
-              <p>
+              <p className='~text-xl/3xl'>
                 <b>Actias</b>Luna
               </p>
             </NavLink>
