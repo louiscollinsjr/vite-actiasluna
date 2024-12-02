@@ -28,7 +28,7 @@ const PartnersComponent: React.FC = () => {
     {
       name: "Studio Hysen Belli",
       url: "https://studiohysenbelli.com/",
-      description: "Studio Kontabiliteti Hysenbelli is a registered accounting studio in the CKB, offering comprehensive consulting services to both local and international businesses. The studio specializes in financial consulting, fiscal consulting, and accounting consulting, helping clients navigate complex financial landscapes and ensure compliance with local and international regulations. Their expertise is tailored to meet the unique needs of each client, supporting business growth and stability through sound financial strategies and expert advice."
+      description: "Studio Kontabiliteti Hysenbelli is a CKB-registered accounting studio offering financial, fiscal, and accounting consulting services to local and international businesses, helping clients navigate financial landscapes and ensure compliance."
     },
     {
       name: "KISIKA Group",
