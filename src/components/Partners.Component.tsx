@@ -21,11 +21,6 @@ const PartnersComponent: React.FC = () => {
       description: "Global Worker is a recruitment agency that connects job seekers with employment opportunities across the European Union. They offer personalized career development support, access to a wide range of job listings, and assistance with necessary documentation."
     },
     {
-      name: "Domi's Repairs & Decorating",
-      url: "https://domisrepairsdecorating.co.uk/",
-      description: "Domi's Repairs & Decorating specializes in high-quality painting and decorating services for both residential and commercial properties. With over five years of experience, they provide interior and exterior painting, wallpaper hanging, and handyman services."
-    },
-    {
       name: "Cobra UK Security",
       url: "http://www.cobrauksecurity.co.uk",
       description: "Cobra UK Security offers comprehensive security solutions tailored to meet the needs of various clients. Their services include manned guarding, mobile patrols, event security, and bespoke security consultancy."
@@ -33,7 +28,7 @@ const PartnersComponent: React.FC = () => {
     {
       name: "Studio Hysen Belli",
       url: "https://studiohysenbelli.com/",
-      description: "Studio Hysen Belli is an architectural and design firm known for its innovative approach to both residential and commercial projects. They emphasize sustainable design practices while delivering aesthetically pleasing solutions."
+      description: "Studio Kontabiliteti Hysenbelli is a registered accounting studio in the CKB, offering comprehensive consulting services to both local and international businesses. The studio specializes in financial consulting, fiscal consulting, and accounting consulting, helping clients navigate complex financial landscapes and ensure compliance with local and international regulations. Their expertise is tailored to meet the unique needs of each client, supporting business growth and stability through sound financial strategies and expert advice."
     },
     {
       name: "KISIKA Group",
@@ -46,18 +41,13 @@ const PartnersComponent: React.FC = () => {
       description: "Quick Legal is a legal service provider that offers fast and efficient solutions for individuals and businesses. Their services include contract drafting, legal consultations, and dispute resolution."
     },
     {
-      name: "Pajtimi",
-      url: "https://pajtimi.com/",
-      description: "Pajtimi is a multifaceted company offering services in construction, renovation, and maintenance. They focus on delivering quality craftsmanship while ensuring customer satisfaction through tailored solutions."
-    },
-    {
       name: "Domi's Repairs and Home Works",
       url: "https://domisrepairsdecorating.co.uk/",
       description: "Domi's Repairs and Home Works is a company specializing in repairs and home works. They offer a wide range of services, including plumbing, electrical, painting, and more."
     },
     {
       name: "Aliida Staffing Recruiting",
-      url: "https://www.alida-staffing-recruiting.eu/en/about-us/",
+      url: "https://www.alida-staffing-recruiting.eu/en/home-alida-staffing-recruiting/",
       description: "Alida Staffing & Recruiting is a recruitment agency committed to connecting skilled professionals with top companies. Their services include human resources, talent management, and more."
     },
     {
@@ -67,7 +57,7 @@ const PartnersComponent: React.FC = () => {
     },
     {
       name: "BB Bau & Handel GmbH",
-      url: "https://cobrauksecurity.co.uk/",  
+      url: "https://bb-bau.net/",  
       description: "BB Bau & Handel GmbH specializes in delivering successful private and commercial construction projects. From planning to completion, we provide expert support every step of the way."
     },
     {
