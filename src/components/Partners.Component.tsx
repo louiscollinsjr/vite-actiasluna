@@ -46,7 +46,7 @@ const PartnersComponent: React.FC = () => {
       description: "Domi's Repairs and Home Works is a company specializing in repairs and home works. They offer a wide range of services, including plumbing, electrical, painting, and more."
     },
     {
-      name: "Aliida Staffing Recruiting",
+      name: "Alida Staffing Recruiting",
       url: "https://www.alida-staffing-recruiting.eu/en/home-alida-staffing-recruiting/",
       description: "Alida Staffing & Recruiting is a recruitment agency committed to connecting skilled professionals with top companies. Their services include human resources, talent management, and more."
     },
@@ -65,7 +65,7 @@ const PartnersComponent: React.FC = () => {
       url: "https://www.atem.gdn",
       description: "atem. is a development and consulting company leveraging AI to drive innovation, optimize operations, and help businesses stay ahead in a digital world."
     }
-  ];
+  ].sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <section className="w-full flex flex-col content-center items-center pt-20 pb-48 px-10 bg-white">
@@ -77,7 +77,7 @@ const PartnersComponent: React.FC = () => {
         Building Success Together: Strategic Partnerships for Global Business Transformation
         </h1>
         <p className="md:text-md text-left text-base leading-normal lg:pr-20 pb-8 pt-16">
-          At <b>Actias</b>Luna, our partners are more than colleagues—they are essential collaborators in driving transformative business solutions. We work closely with:
+          At <b>Actias Luna</b>, our partners are more than colleagues—they are essential collaborators in driving transformative business solutions. We work closely with:
         </p>
         
         <ul className="list-disc pl-6 space-y-0 mb-12 w-[80%]">

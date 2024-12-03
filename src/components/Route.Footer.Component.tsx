@@ -62,7 +62,7 @@ const FooterComponent: React.FC = () => {
           </div>
           <div className='flex space-x-4 py-8 align-baseline align-bottom text-xs'>
             
-                <p className=''>© 2024 <b>Actias</b>Luna, SRL. All rights reserved.</p>
+                <p className=''>© 2024 <b>Actias Luna</b>, All rights reserved.</p>
                 {legalCopyLinks.map((link,index)=>(
                      <a
                      key={index}

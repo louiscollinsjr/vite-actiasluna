@@ -46,12 +46,13 @@ const handleNavLinkClick = (sectionId: string) => {
             <NavLink to="/" end>
               {/* <img className="w-20 invert md:invert-0"  src={navLogo} alt="Logo" onClick={() => setIsMobileNavOpen(false)} /> */}
               <p className='~text-xl/3xl'>
-                <b>Actias</b>Luna
+                <b>Actias Luna</b>
               </p>
             </NavLink>
           </div>
 
           <div className="hidden md:flex space-x-8 ml-8">
+            <NavLink to="/" className="text-gray-600 hover:text-gray-900 text-xs" end>Home</NavLink>
             <NavLink to="/partners" className="text-gray-600 hover:text-gray-900 text-xs">Partners</NavLink>
             <NavLink to="/#insights-section" onClick={()=>scrollToSection('insights-section')} className="text-gray-600 hover:text-gray-900 text-xs">
               Insights
@@ -94,7 +95,7 @@ const handleNavLinkClick = (sectionId: string) => {
                     src={navLogo}
                     alt="Logo"
                     onClick={() => setIsMobileNavOpen(false)}
-                  /> */} <b>actias</b>luna
+                  /> */} <b>Actias Luna</b>
                 </Link>
               </div>
 
@@ -125,7 +126,8 @@ const handleNavLinkClick = (sectionId: string) => {
                   <div className="flex flex-col space-y-4">
                     <NavLink to="/" className="text-gray-600 hover:text-gray-900" onClick={() => setIsMobileNavOpen(false)} end>Home</NavLink>
                     <NavLink to="/partners" className="text-gray-600 hover:text-gray-900" onClick={() => setIsMobileNavOpen(false)}>Partners</NavLink>
-                    <NavLink to="/privacy-policy" className="text-gray-600 hover:text-gray-900" onClick={() => setIsMobileNavOpen(false)}>Privacy Policy</NavLink>
+                    <NavLink to="/#insights-section" className="text-gray-600 hover:text-gray-900" onClick={() => { setIsMobileNavOpen(false); scrollToSection('insights-section'); }}>Insights</NavLink>
+                    <NavLink to="/#contact-section" className="text-gray-600 hover:text-gray-900" onClick={() => { setIsMobileNavOpen(false); handleNavLinkClick('contact-section'); }}>Contact us</NavLink>
                   </div>
                 </div>
               </div>
