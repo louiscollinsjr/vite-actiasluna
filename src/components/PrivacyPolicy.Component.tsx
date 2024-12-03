@@ -6,7 +6,7 @@ const PrivacyPolicy: React.FC = () => {
     <section className='w-full flex flex-col md:justify-center items-center py-48 md:py-24 lg:py-28 px-5 bg-white lg:h-[1000px]'>
         <div className=' text-sm bg-white lg:w-245 p-10'>
         <h1 className='font-bold pb-8 text-xl'>Privacy Policy</h1>
-        <p className='pb-8'>Welcome to ActiasLuna! We are committed to protecting your privacy and ensuring that your personal data is handled securely. This privacy policy explains how we collect, use, and protect your information when you visit our website.</p>
+        <p className='pb-8'>Welcome to Actias Luna! We are committed to protecting your privacy and ensuring that your personal data is handled securely. This privacy policy explains how we collect, use, and protect your information when you visit our website.</p>
 
       <h2>1. Information We Collect</h2>
       <p><strong>Essential Cookies:</strong> We use cookies that are essential for the functioning of our website. These cookies are necessary to provide you with core functionalities such as navigation and security. They do not store personal data or track your activities beyond the scope of our site.</p>
@@ -25,7 +25,7 @@ const PrivacyPolicy: React.FC = () => {
 
       <h2>5. Contact Information</h2>
       <p className='pb-8'>For any inquiries or concerns regarding this privacy policy, please contact us at:</p>
-      <p className=''>ActiasLuna<br />
+      <p className=''>Actias Luna<br />
       <strong>Email:</strong> privacy @ actiasluna.com
       </p>
 

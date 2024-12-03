@@ -30,7 +30,7 @@ const ExpandHorizonsComponent: React.FC = () => {
       Testimonials from Our Partners
       </p>
       <p className="~text-base/xl tracking-wide text-black pb-8 font-normal md:w-[40%]">
-      At <b>Actias</b>Luna, we deeply value our partnerships and are committed to delivering excellence, as evidenced by the positive experiences of those we work with.
+      At <b>Actias Luna</b>, we deeply value our partnerships and are committed to delivering excellence, as evidenced by the positive experiences of those we work with.
       </p>
       <Link to="/partners" className="text-blue-600 hover:text-blue-800 transition-colors pb-12 block">
          Our partners →
@@ -39,7 +39,7 @@ const ExpandHorizonsComponent: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-6 font-playfair justify-center items-center bg-gray-200 p-1 bg-opacity-0 rounded-2xl">
         <div className="bg-white p-6 rounded-lg shadow-lg h-40">
             <p className="text-gray-700 text-base italic tracking-wide">
-                <span className='text-2xl font-bold'>"</span>Working with ActiasLuna has been an incredibly rewarding experience. Their clear vision and strategic approach make the design process seamless and enjoyable.<span className='text-2xl font-bold'>"</span>
+                <span className='text-2xl font-bold'>"</span>Working with Actias Luna has been an incredibly rewarding experience. Their clear vision and strategic approach make the design process seamless and enjoyable.<span className='text-2xl font-bold'>"</span>
             </p>
         </div>
        

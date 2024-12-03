@@ -27,7 +27,7 @@ export const Header127 = () => {
         {/* Order on medium screens and above: Image first, Text second */}
         
         <div className="pt-2 md:pt-12 order-2 md:order-1 "> {/* This will be second on mobile, first on desktop */}
-          <p className="text-center invisible md:text-left md:visible"><b>Actias</b>Luna</p>
+          <p className="text-center invisible md:text-left md:visible"><b>Actias Luna</b></p>
           <h1 className="~text-5xl/7xl mb-5 md:mb-6 md:text-left font-heading text-center font-normal">
             Expertise Without Borders. Solutions Without Limits.
           </h1>
